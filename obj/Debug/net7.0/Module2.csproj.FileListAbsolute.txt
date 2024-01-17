@@ -1,0 +1,14 @@
+D:\HOMEWORK\Module2\bin\Debug\net7.0\Module2.exe
+D:\HOMEWORK\Module2\bin\Debug\net7.0\Module2.deps.json
+D:\HOMEWORK\Module2\bin\Debug\net7.0\Module2.runtimeconfig.json
+D:\HOMEWORK\Module2\bin\Debug\net7.0\Module2.dll
+D:\HOMEWORK\Module2\bin\Debug\net7.0\Module2.pdb
+D:\HOMEWORK\Module2\obj\Debug\net7.0\Module2.GeneratedMSBuildEditorConfig.editorconfig
+D:\HOMEWORK\Module2\obj\Debug\net7.0\Module2.AssemblyInfoInputs.cache
+D:\HOMEWORK\Module2\obj\Debug\net7.0\Module2.AssemblyInfo.cs
+D:\HOMEWORK\Module2\obj\Debug\net7.0\Module2.csproj.CoreCompileInputs.cache
+D:\HOMEWORK\Module2\obj\Debug\net7.0\Module2.dll
+D:\HOMEWORK\Module2\obj\Debug\net7.0\refint\Module2.dll
+D:\HOMEWORK\Module2\obj\Debug\net7.0\Module2.pdb
+D:\HOMEWORK\Module2\obj\Debug\net7.0\Module2.genruntimeconfig.cache
+D:\HOMEWORK\Module2\obj\Debug\net7.0\ref\Module2.dll
