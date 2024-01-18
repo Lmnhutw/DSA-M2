@@ -31,13 +31,24 @@ class Student
     {
         static void Main(string[] args)
         {
-            Student student = new Student("Nguyễn Văn A", 6, "1A3");
-            student.DisplayInfo();
+            Student[] students = new Student[4];
+            students[0]  = new Student("Nguyễn Văn A", 10, "5D4");
+            students[1]  = new Student ("Nguyễn Văn B", 9, "4C3");
+            students[2]  = new Student("Nguyễn Văn D", 8, "3B2");
+            students[3]  = new Student("Nguyễn Văn D", 7, "2A1");
+            
+            
+        foreach (var Student in students )
+        {
+            Student.DisplayInfo();
+        }
+        // foreach (var Student in students)
+        // {
+        //     Student.Delete();
+        // }
+            
 
-            student.ClassName = "1A7";
-            student.DisplayInfo();
-            student.Delete();
-
+            
         }
     }
 }
