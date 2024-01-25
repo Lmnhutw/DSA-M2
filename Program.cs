@@ -17,10 +17,10 @@ class Student
 
     public static void DisplayInfo(Student[] students)
     {
-      foreach (var student in students)
-      {
-          Console.WriteLine($"Name: {student.Name} - Age: {student.Age} - Class: {student.ClassName}");
-      }
+        foreach (var Student in students)
+        {
+            Console.WriteLine($"Name: {Student.Name} - Age: {Student.Age} - Class: {Student.ClassName}");
+        }
     }
     public void Delete()
     {
@@ -34,9 +34,9 @@ class Student
     public static void SearchingName(Student[] students, string name)
     {
         int Count = 0;
-        foreach (var student in students)
+        foreach (var Student in students)
         {
-            if (student.Name == name)
+            if (Student.Name == name)
             {
                 Count++;
                 Console.WriteLine($"Tìm thấy sinh viên {name}");
@@ -52,11 +52,11 @@ class Student
     public static Student FindOldestStudent(Student[] students)
     {
         Student oldestStudent = students[0];
-        foreach (var student in students)
+        foreach (var Student in students)
         {
-            if (student.Age > oldestStudent.Age)
+            if (Student.Age > oldestStudent.Age)
             {
-                oldestStudent = student;
+                oldestStudent = Student;
             }
         }
         Console.WriteLine($"Sinh vien {oldestStudent.Name} có số tuổi lớn nhất là {oldestStudent.Age}");
@@ -66,28 +66,25 @@ class Student
     public static Student FindYoungestStudent(Student[] students)
     {
         Student youngestStudent = students[0];
-        foreach (var student in students)
+        foreach (var Student in students)
         {
-            if (student.Age < youngestStudent.Age)
+            if (Student.Age < youngestStudent.Age)
             {
-                youngestStudent = student;
+                youngestStudent = Student;
             }
         }
         Console.WriteLine($"Sinh vien {youngestStudent.Name} có số tuổi nhỏ nhất là {youngestStudent.Age}");
         return youngestStudent;
     }
 
-    public static void SwapStudent(Student[] students)
+    public static void SwapStudent(Student[] students, int index1,  int index2)
     {
-        Student temp = students[0];
-        students[0] = students[3];
-        students[3] = temp;
+        Student temp = students[index1];
+        students[index1] = students[index2];
+        students[index2] = temp;
 
         Console.WriteLine($"Danh sách sinh viên sau khi đổi là: ");
         Student.DisplayInfo(students);
-        
-        
-
     }
 
 
@@ -109,13 +106,12 @@ class Student
                 std4
             };
 
-        
-            Student.DisplayInfo(students);
 
+            Student.DisplayInfo(students);
             Student.SearchingName(students, "Nguyễn Văn A");
             Student.FindOldestStudent(students);
             Student.FindYoungestStudent(students);
-            Student.SwapStudent(students);
+            Student.SwapStudent(students, 0, 3);
 
             // foreach (var Student in Student)
             // {
